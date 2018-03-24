@@ -1,0 +1,100 @@
+body{
+	color: #000;
+	background-color: #fff;
+	font-size: 14px;
+	font-family: PingFangSC-Regular,"Microsoft Yahei", sans-serif;
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix{
+	*zoom: 1;
+}
+
+
+// $purple-color: #A857F5; 		//通用紫色 rgb 168 87 245
+$purple-color: #A338FE; 		//通用紫色 rgb 163 56 254
+$purple-text-color: #A338FE;    //文字紫色rgb 163 56 254
+
+
+$grey155-color: #9B9B9B; //通用灰 rgb 155 155 155
+
+//圆角矩形
+@mixin block-block-radius($radius: 2px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+//字体缩小  针对字体小于12px
+@mixin mini-font-size($mfs: 12px){
+	font-size: 12px;
+	-webkit-transform-origin-x: 0;
+    -webkit-transform: scale($mfs / 12px);
+}
+
+
+@mixin global-big-star($width: 20px, $height: 20px){
+	width: $width;
+	height: $height;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/big-star@3x.png);
+}
+
+@mixin global-small-star($width: 20px, $height: 20px){
+	width: $width;
+	height: $height;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/small-star@3x.png);
+}
+
+@mixin contain-bg-icon($url){
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: $url;
+}
+
+@mixin btn-disable($op: 0.3){
+	opacity: $op;
+}
+
+
+
+/********animate*******/
+//不断顺时针旋转
+@-webkit-keyframes rotation{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+
+.rotation{
+-webkit-transform: rotate(360deg);
+animation: rotation 10s linear infinite;
+-moz-animation: rotation 10s linear infinite;
+-webkit-animation: rotation 10s linear infinite;
+-o-animation: rotation 10s linear infinite;
+}
+
+
+
+
+
+
+
+

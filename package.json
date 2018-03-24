@@ -1,0 +1,35 @@
+{
+  "name": "arms-tmpl-gulp",
+  "version": "0.0.1",
+  "description": "browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grARM/arms-tmpl-gulp.git"
+  },
+  "author": "grARM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grARM/arms-tmpl-gulp/issues"
+  },
+  "homepage": "https://github.com/grARM/arms-tmpl-gulp#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^3.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglyfly": "^1.4.2",
+    "q": "^1.5.1",
+    "webpack": "^4.2.0"
+  }
+}

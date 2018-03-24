@@ -1,0 +1,16 @@
+.layout{
+	// 贯通页面整个宽度
+	&-wrap{
+		width: 100%;
+	}
+	// 页面居中主体
+	&-container{
+		max-width: 1210px;
+		min-width: 1010px;
+		margin: 0 auto;
+	}
+	//脱离页面文档流的漂浮类
+	&-float{
+
+	}
+}
